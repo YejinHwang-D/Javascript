@@ -9,23 +9,21 @@
     <body>
         
         
-        <div class="alert_box" id="box">Alert 박스</div>
-        <button onclick="open_('block')">열기</button>
-        <button onclick="open_('none')">닫기</button>
+        <div class="alert_box" id="box">
+            <p id="title">Alert</p>
+            <button onclick="close_('none')">X</button>
+        </div>
         
         
-        
-        <div class="box_1" id="box">제 1 영역</div>
-        
-
-        
-        
+        <button onclick="open_('아이디를 입력해주세요')">버튼1</button>
+        <button onclick="open_('비밀번호를 입력해주세요')">버튼2</button>
         
         
         <script>
             
             function open_(ele) {
-                document.getElementById('box').style.display = ele;
+                document.getElementById('title').innerHTML = ele;
+                document.getElementById('box').style.display = 'block';
             }
             
             
@@ -34,6 +32,14 @@
             
             
             
+            
+            
+            
+            
+            
+            function close_(ele) {
+                document.getElementById('box').style.display = 'none';
+            }
             
         </script>
         

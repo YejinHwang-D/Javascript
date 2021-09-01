@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+    <body>
+        
+        
+        <div class="alert_box" id="box">
+            <p id="title">.</p>
+            <button id="close">X</button>
+        </div>
+        
+        
+        <button id="open">클릭?</button>
+        
+        
+        <script>
+            
+            document.getElementById('close').addEventListener('click', function() {
+                document.getElementById('box').style.display = 'none';
+            } )
+            
+            document.getElementById('open').addEventListener('mouseover', function() {
+                document.getElementById('box').style.display = 'block';
+                document.getElementById('box').innerHTML = '열어보면 무슨 글자가?';
+            })
+            
+            
+            
+            document.getElementById('open').addEventListener('click', function() {
+                document.getElementById('box').style.display = 'block';
+                document.getElementById('box').innerHTML = '짜잔~ 열어보면 아무 것도 없지롱';
+            })
+            
+        </script>
+
+        
+        
+    </body>
+</html>
