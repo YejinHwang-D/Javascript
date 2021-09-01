@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+    <body>
+        
+        
+        <h4 id="test">안녕하세요</h4>
+        
+
+        
+       <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>    
+        <!-- jQuery 설치 -->
+        <!-- jQuery 위치는 body 끝나기 전이 적당. 
+        jQuery 파일 밑부터 문법 이용 가능하지만,
+        맨 위에 작성할 경우 html 쓰기도 전에 js 파일을 다운받기 위해 브라우저가 멈춘다. -->
+
+        
+        
+        <script>
+//            document.getElementById('test').innerHTML = '???';
+            $('#test').html('안녕');  //ID가 test인 곳을 찾아주세요! Class가 test인 곳은 .test로 작성한다.
+            $('#test').css('color', 'red');
+            $('#test').attr('src', '???');
+            
+            
+            $('#test').addClass('yellow-bg');
+            
+        </script>
+        
+    </body>
+</html>
